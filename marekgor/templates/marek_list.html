@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marek List</title>
+</head>
+<body>
+    <h1>My Projects</h1>
+    <ul>
+        {% for marek in mareks %}
+            <li>
+                <h2>{{ marek.title }}</h2>
+                <p>{{ marek.description }}</p>
+                {% if marek.link %}
+                    <a href="{{ marek.link }}">Learn more</a>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
