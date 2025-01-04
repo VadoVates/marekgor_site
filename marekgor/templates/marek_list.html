@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Marek List</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %} MG - project list {% endblock %}
+{% block content %}
     <h1>My Projects</h1>
     <ul>
         {% for marek in mareks %}
@@ -17,5 +13,4 @@
             </li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
