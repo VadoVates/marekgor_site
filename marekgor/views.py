@@ -11,10 +11,6 @@ def index(request):
 def about (request):
     return render (request, 'about.html')
 
-def marek(request):
-    mareks = Marek.objects.all()
-    return render(request, 'marek_list.html', {'mareks': mareks})
-
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -35,3 +31,7 @@ def contact(request):
         form = ContactForm()
 
     return render(request, 'contact.html', {'form': form})
+
+def marek_list(request):
+    mareks = Marek.objects.all()
+    return render(request, 'marek_list.html', {'mareks': mareks})

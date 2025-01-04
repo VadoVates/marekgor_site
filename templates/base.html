@@ -6,6 +6,7 @@
     <title>{% block title %}Marek Górski{% endblock %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
     {% block extra_head %}
         <!-- Place for adding additional CSS or meta tags -->
     {% endblock %}
@@ -18,6 +19,7 @@
             <li><a href="{% url 'index' %}">Home</a></li>
             <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="{% url 'marek_list' %}">My Projects</a></li>
             <!-- Add additional navigation links as needed -->
         </ul>
     </nav>
