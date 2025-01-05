@@ -12,6 +12,21 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 from decouple import config
+from django.http import HttpResponseForbidden
+
+class BlockSuspiciousPathsMiddleware:
+    BLOCKED_PATHS = [
+        "/wp-admin/", "/wp-content/", "/wp-includes/", "/.git/",
+    ]
+
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        for path in self.BLOCKED_PATHS:
+            if request.path.startswith(path):
+                return HttpResponseForbidden("Forbidden")
+        return self.get_response(request)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,7 +39,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['marekgor.com', 'www.marekgor.com', 'marekgor-8b7239d28435.herokuapp.com', 'localhost', '127.0.0.1']
 
