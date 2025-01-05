@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Trying to resolve not-working recaptcha v3.0">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marekgor/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marekgor/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marekgor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Trying to resolve not-working recaptcha v2.0" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -486,7 +481,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736105874545</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Trying to resolve not-working recaptcha v2.0">
+      <option name="closed" value="true" />
+      <created>1736107697402</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1736107697402</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Trying to resolve not-working recaptcha v2.0">
+      <option name="closed" value="true" />
+      <created>1736107849364</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1736107849364</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Prepare for sending into space" />
     <MESSAGE value="corrected for Heroku" />
     <MESSAGE value="Static files" />
     <MESSAGE value="whitenoise added" />
@@ -541,7 +551,8 @@
     <MESSAGE value="Added captcha to form - test with changes in HTML and JS" />
     <MESSAGE value="Recaptcha use ssl=true" />
     <MESSAGE value="Trying to resolve not-working recaptcha v3.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to resolve not-working recaptcha v3.0" />
+    <MESSAGE value="Trying to resolve not-working recaptcha v2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to resolve not-working recaptcha v2.0" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
