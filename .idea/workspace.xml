@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Added staticfiles_dirs">
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Added some middleware to avoid scanning for vulnerabilities">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marekgor/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/middleware.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +154,7 @@
       <updated>1735834753404</updated>
       <workItem from="1735834754425" duration="9477000" />
       <workItem from="1736023902227" duration="7854000" />
-      <workItem from="1736065670664" duration="5493000" />
+      <workItem from="1736065670664" duration="6381000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -323,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736090941870</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added some middleware to avoid scanning for vulnerabilities">
+      <option name="closed" value="true" />
+      <created>1736091677462</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736091677462</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +378,8 @@
     <MESSAGE value="background attachement is fixed to body" />
     <MESSAGE value="Changed few settings" />
     <MESSAGE value="Added staticfiles_dirs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added staticfiles_dirs" />
+    <MESSAGE value="Added some middleware to avoid scanning for vulnerabilities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some middleware to avoid scanning for vulnerabilities" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
