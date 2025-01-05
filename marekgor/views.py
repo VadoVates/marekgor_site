@@ -29,6 +29,6 @@ def contact(request):
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})
 
-def marek_list(request):
+def marek(request):
     mareks = Marek.objects.all()
-    return render(request, 'marek_list.html', {'mareks': mareks})
+    return render(request, 'marek.html', {'mareks': mareks})
