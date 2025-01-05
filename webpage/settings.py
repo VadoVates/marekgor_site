@@ -33,11 +33,11 @@ ALLOWED_HOSTS = ['marekgor.com', 'www.marekgor.com', 'marekgor-8b7239d28435.hero
 
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
-    'django.contrib.admin',
-    'django.contrib.auth',
+#    'django.contrib.admin',
+#    'django.contrib.auth',
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
+#    'django.contrib.sessions',
+#    'django.contrib.messages',
     'django.contrib.staticfiles',
     'marekgor.apps.MarekgorConfig',
 ]
@@ -46,11 +46,11 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'marekgor.middleware.BlockSuspiciousPathsMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
+#    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
+#    'django.contrib.auth.middleware.AuthenticationMiddleware',
+#    'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
@@ -149,6 +149,3 @@ SECURE_SSL_REDIRECT = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')  # Obsługa SSL na Heroku
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-
-import logging
-logging.basicConfig(level=logging.DEBUG)
