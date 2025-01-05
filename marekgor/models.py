@@ -1,3 +1,6 @@
+"""
+#not using database right now
+
 from django.db import models
 
 class Marek(models.Model):
@@ -7,3 +10,5 @@ class Marek(models.Model):
 
     def __str__(self):
         return self.title
+
+"""

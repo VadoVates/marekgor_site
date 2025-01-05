@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.core.mail import send_mail
 
 from marekgor.forms import ContactForm
-from marekgor.models import Marek
 
 def index(request):
     return render(request, 'index.html')
@@ -30,5 +29,5 @@ def contact(request):
     return render(request, 'contact.html', {'form': form})
 
 def marek(request):
-    mareks = Marek.objects.all()
-    return render(request, 'marek.html', {'mareks': mareks})
+    # mareks = Marek.objects.all()
+    return render(request, 'marek.html')
