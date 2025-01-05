@@ -11,7 +11,7 @@ class BlockSuspiciousPathsMiddleware:
         "/typo3/", "/drupal/", "/phpmyadmin/", "/marekgor/", "/cgi-bin/", "/server-status/",
         "/.well-known/", "/server-info/", "/config/", "/backup/", "/temp/", "/logs/",
         "/backup/", "/errors/", "/debug/", "/cache/", "/.env", "/__pycache__/",
-        "/migrations/", "/.gitmodules", "/manage.py", "/db.sqlite3"
+        "/migrations/", "/.gitmodules", "/manage.py", "/db.sqlite3", "/wordpress/",
     ]
 
     def __init__(self, get_response):

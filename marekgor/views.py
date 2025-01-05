@@ -1,11 +1,11 @@
 from django.shortcuts import render
 # from django.core.mail import send_mail
 
-from marekgor.forms import ContactForm
+# from marekgor.forms import ContactForm
 from marekgor.models import Marek
 
-from django.core.mail import send_mail, BadHeaderError
-from django.http import HttpResponse
+from django.core.mail import send_mail
+from django.http import JsonResponse
 
 def index(request):
     return render(request, 'index.html')
@@ -13,6 +13,7 @@ def index(request):
 def about (request):
     return render (request, 'about.html')
 
+"""
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -37,6 +38,23 @@ def contact(request):
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})
+"""
+
+def contact(request):
+    if request.method == "POST":
+        try:
+            send_mail(
+                'Test email',
+                'This is a test email.',
+                'your_gmail_user@gmail.com',
+                ['recipient@example.com'],
+                fail_silently=False,
+            )
+            return JsonResponse({"status": "success"})
+        except Exception as e:
+            print(f"Error sending email: {e}")
+            return JsonResponse({"status": "error", "message": str(e)})
+    return JsonResponse({"status": "invalid request"})
 
 def marek_list(request):
     mareks = Marek.objects.all()
