@@ -1,14 +1,5 @@
 {% extends 'base.html' %}
 {% block title %} MG - Contact {% endblock %}
-{% block extra_head %}
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-     <script>
-   function onSubmit(token) {
-       document.getElementById("contact-form").submit();
-   }
-    </script>
-
-{% endblock %}
 {% block content %}
 <div class="container">
     <h1>Contact Me</h1>
@@ -16,7 +7,6 @@
         {% csrf_token %}
         {{ form.as_p }}
         <button class='g-recaptcha'
-                data-sitekey="reCAPTCHA_site_key"
                 data-callback='onSubmit'
                 data-action='submit'>
             Send

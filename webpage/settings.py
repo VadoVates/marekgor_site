@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'marekgor.apps.MarekgorConfig',
+    'django_recaptcha',
 ]
 
 MIDDLEWARE = [
@@ -151,3 +152,6 @@ SECURE_SSL_REDIRECT = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')  # Obsługa SSL na Heroku
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+
+RECAPTCHA_PUBLIC_KEY = '6LeL-a4qAAAAAHoA8A-XVzrVAardarJSre3eO1o5'
+RECAPTCHA_PRIVATE_KEY = '6LeL-a4qAAAAALxRNCGcWF1OIxV_fYF7RwYSuS9r'
