@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Debugging smtp">
-      <change beforePath="$PROJECT_DIR$/marekgor/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/middleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marekgor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Debugging smtp" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +151,7 @@
       <updated>1735834753404</updated>
       <workItem from="1735834754425" duration="9477000" />
       <workItem from="1736023902227" duration="7854000" />
-      <workItem from="1736065670664" duration="9294000" />
+      <workItem from="1736065670664" duration="9599000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -364,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736095104230</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Debugging smtp">
+      <option name="closed" value="true" />
+      <created>1736095450492</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1736095450492</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
