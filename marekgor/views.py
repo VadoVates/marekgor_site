@@ -12,22 +12,17 @@ def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            try:
-                name = form.cleaned_data['name']
-                email = form.cleaned_data['email']
-                message = form.cleaned_data['message']
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            message = form.cleaned_data['message']
 
-                send_mail(
-                    subject='Formularz kontaktowy',
-                    message=f'Nazwa: {name}\nE-mail: {email}\n\n{message}',
-                    from_email=email,
-                    recipient_list=['contact@marekgor.com'],
-                )
-                return render(request, 'contact_success.html')
-            except Exception as e:
-                form.add_error(None, f"An error occurred: {e}")
-        else:
-            print("Form validation failed:", form.errors)  # Debugging info
+            send_mail(
+                subject='Formularz kontaktowy',
+                message=f'Nazwa: {name}\nE-mail: {email}\n\n{message}',
+                from_email=email,
+                recipient_list=['contact@marekgor.com'],
+            )
+            return render(request, 'contact_success.html', {'form': form})
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})
