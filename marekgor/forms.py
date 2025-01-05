@@ -8,10 +8,12 @@ class ContactForm(forms.Form):
         public_key=settings.RECAPTCHA_PUBLIC_KEY,
         private_key=settings.RECAPTCHA_PRIVATE_KEY,
         widget=ReCaptchaV2Checkbox(
-            'data-theme: dark',
-            'data-callback: onSubmitCallback',
-            'data-action: submit',
-            'data-size: compact',
+            attrs={
+            'data-theme' : 'dark',
+            'data-callback' : 'onSubmitCallback',
+            'data-action' : 'submit',
+            'data-size' : 'compact',
+            }
         )
     )
     name = forms.CharField(max_length=100, label="Your name:")
