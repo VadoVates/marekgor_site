@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Removed admin panel - don't have database anyway">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpage/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpage/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpage/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Uncommenting sessions and messages to see what crashed site" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +151,7 @@
       <updated>1735834753404</updated>
       <workItem from="1735834754425" duration="9477000" />
       <workItem from="1736023902227" duration="7854000" />
-      <workItem from="1736065670664" duration="11295000" />
+      <workItem from="1736065670664" duration="11604000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -389,7 +385,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736097071991</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Removed admin panel - don't have database anyway">
+      <option name="closed" value="true" />
+      <created>1736097407178</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1736097407178</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Uncommenting sessions and messages to see what crashed site">
+      <option name="closed" value="true" />
+      <created>1736097698573</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1736097698573</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +454,8 @@
     <MESSAGE value="Debugging smtp" />
     <MESSAGE value="Propably fixed sending e-mails from contact form" />
     <MESSAGE value="Removed admin panel - don't have database anyway" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed admin panel - don't have database anyway" />
+    <MESSAGE value="Uncommenting sessions and messages to see what crashed site" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uncommenting sessions and messages to see what crashed site" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
