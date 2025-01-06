@@ -2,11 +2,11 @@
 {% block title %} MG - Contact {% endblock %}
 {% block extra_head %}
 <!--   <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lcf8K8qAAAAAKZvFSNNU5ZF8Y9CPQfEjvQu2RDd"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeL-a4qAAAAAHoA8A-XVzrVAardarJSre3eO1o5"></script>
     <script>
         function onSubmit(e) {
             e.preventDefault();
-            grecaptcha.execute('6Lcf8K8qAAAAAKZvFSNNU5ZF8Y9CPQfEjvQu2RDd', {action: 'submit'}).then(function(token) {
+            grecaptcha.execute('6LeL-a4qAAAAAHoA8A-XVzrVAardarJSre3eO1o5', {action: 'submit'}).then(function(token) {
                 // Wstaw token reCAPTCHA do ukrytego pola
                 document.getElementById('id_captcha').value = token;
                 document.getElementById('contact-form').submit();
