@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block title %} MG - Contact {% endblock %}
 {% block extra_head %}
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!--   <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 {% endblock %}
 {% block content %}
 <div class="container">
@@ -9,7 +9,6 @@
     <form id="contact-form" method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <div class="g-recaptcha" data-sitekey="6Lcf8K8qAAAAAKZvFSNNU5ZF8Y9CPQfEjvQu2RDd"></div>
         <button type="submit" class="btn btn-primary">
             Send
         </button>
