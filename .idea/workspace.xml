@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Trying captcha v3 forms.py + contact.html script + views.py&#10;corrected requirements" />
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Trying captcha v3 forms.py + contact.html script + views.py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,15 +158,7 @@
       <workItem from="1735834754425" duration="9477000" />
       <workItem from="1736023902227" duration="7854000" />
       <workItem from="1736065670664" duration="11604000" />
-      <workItem from="1736186428537" duration="3242000" />
-    </task>
-    <task id="LOCAL-00002" summary="Initial commit">
-      <option name="closed" value="true" />
-      <created>1735836605101</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1735836605101</updated>
+      <workItem from="1736186428537" duration="3613000" />
     </task>
     <task id="LOCAL-00003" summary="Template ready.">
       <option name="closed" value="true" />
@@ -552,7 +544,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736189529195</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Trying captcha v3 forms.py + contact.html script + views.py">
+      <option name="closed" value="true" />
+      <created>1736189861193</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1736189861193</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,9 +605,9 @@
     <MESSAGE value="magically started working..." />
     <MESSAGE value="Trying captcha v3, only in forms.py" />
     <MESSAGE value="Trying captcha v3 forms.py + contact.html script" />
-    <MESSAGE value="Trying captcha v3 forms.py + contact.html script + views.py" />
     <MESSAGE value="Trying captcha v3 forms.py + contact.html script + views.py&#10;corrected requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying captcha v3 forms.py + contact.html script + views.py&#10;corrected requirements" />
+    <MESSAGE value="Trying captcha v3 forms.py + contact.html script + views.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying captcha v3 forms.py + contact.html script + views.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
