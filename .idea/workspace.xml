@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Trying to resolve not-working recaptcha v2.0" />
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Trying to resolve not-working recaptcha v2.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="f2e7ef9c05e70db3327256ea1f5b085c731a3838" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -130,6 +137,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.manage" />
+        <item itemvalue="Python.manage" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +160,7 @@
       <workItem from="1735834754425" duration="9477000" />
       <workItem from="1736023902227" duration="7854000" />
       <workItem from="1736065670664" duration="11604000" />
+      <workItem from="1736186428537" duration="621000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
