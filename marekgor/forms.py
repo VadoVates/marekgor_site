@@ -10,5 +10,5 @@ class ContactForm(forms.Form):
     captcha = ReCaptchaField(
         public_key=settings.RECAPTCHA_PUBLIC_KEY,
         private_key=settings.RECAPTCHA_PRIVATE_KEY,
-        widget=ReCaptchaV3 (required_score=0.8)
+        widget=ReCaptchaV3(attrs={"required_score": 0.8})
     )

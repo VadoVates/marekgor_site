@@ -2,6 +2,17 @@
 {% block title %} MG - Contact {% endblock %}
 {% block extra_head %}
 <!--   <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lcf8K8qAAAAAKZvFSNNU5ZF8Y9CPQfEjvQu2RDd"></script>
+    <script>
+        function onSubmit(e) {
+            e.preventDefault();
+            grecaptcha.execute('6Lcf8K8qAAAAAKZvFSNNU5ZF8Y9CPQfEjvQu2RDd', {action: 'submit'}).then(function(token) {
+                // Wstaw token reCAPTCHA do ukrytego pola
+                document.getElementById('id_captcha').value = token;
+                document.getElementById('contact-form').submit();
+            });
+        }
+    </script>
 {% endblock %}
 {% block content %}
 <div class="container">
@@ -9,7 +20,7 @@
     <form id="contact-form" method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn btn-primary" onclick="onSubmit(event)">
             Send
         </button>
     </form>
