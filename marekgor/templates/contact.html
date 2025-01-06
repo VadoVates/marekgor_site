@@ -1,25 +1,23 @@
 {% extends 'base.html' %}
 {% block title %} MG - Contact {% endblock %}
 {% block extra_head %}
-<!--   <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LeL-a4qAAAAAHoA8A-XVzrVAardarJSre3eO1o5"></script>
-    <script>
-        function onSubmit(e) {
-            e.preventDefault();
-            grecaptcha.execute('6LeL-a4qAAAAAHoA8A-XVzrVAardarJSre3eO1o5', {action: 'submit'}).then(function(token) {
-                // Wstaw token reCAPTCHA do ukrytego pola
-                document.getElementById('id_captcha').value = token;
-                document.getElementById('contact-form').submit();
-            });
-        }
-    </script>
+<script src="https://www.google.com/recaptcha/api.js?render={{ form.fields.captcha.widget.attrs.site_key }}"></script>
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('{{ form.fields.captcha.widget.attrs.site_key }}', { action: 'submit' }).then(function (token) {
+            document.getElementById('id_captcha').value = token;
+        });
+    });
+</script>
 {% endblock %}
+
 {% block content %}
 <div class="container">
     <h1>Contact Me</h1>
     <form id="contact-form" method="post">
         {% csrf_token %}
         {{ form.as_p }}
+        <input type="hidden" id="id_captcha" name="g-recaptcha-response">
         <button type="submit" class="btn btn-primary" onclick="onSubmit(event)">
             Send
         </button>

@@ -1,8 +1,6 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 from marekgor.forms import ContactForm
-import requests
-from django.conf import settings
 
 def index(request):
     return render(request, 'index.html')
@@ -10,40 +8,36 @@ def index(request):
 def about (request):
     return render (request, 'about.html')
 
-def verify_recaptcha(token):
-    url = 'https://www.google.com/recaptcha/api/siteverify'
-    data = {
-        'secret': settings.RECAPTCHA_PRIVATE_KEY,
-        'response': token
-    }
-    response = requests.post(url, data=data)
-    result = response.json()
-    return result.get('success', False)
+from marekgor.utils import verify_recaptcha
 
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
-        recaptcha_token = request.POST.get('g-recaptcha-response')
-        recaptcha_valid = verify_recaptcha(recaptcha_token)
+        token = request.POST.get('g-recaptcha-response')
+        recaptcha_result = verify_recaptcha(token)
+        print(f"reCAPTCHA result: {recaptcha_result}")
 
-        if form.is_valid() and recaptcha_valid:
+        if form.is_valid() and recaptcha_result.get('success'):
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
             message = form.cleaned_data['message']
 
-            send_mail(
-                subject='Formularz kontaktowy',
-                message=f'Nazwa: {name}\nE-mail: {email}\n\n{message}',
-                from_email=email,
-                recipient_list=['contact@marekgor.com'],
-            )
-            return render(request, 'contact_success.html', {'form': form})
+            try:
+                send_mail(
+                    subject='Formularz kontaktowy',
+                    message=f'Nazwa: {name}\nE-mail: {email}\n\n{message}',
+                    from_email=email,
+                    recipient_list=['contact@marekgor.com'],
+                )
+                return render(request, 'contact_success.html', {'form': form})
+            except Exception as e:
+                print(f"Error sending email: {e}")
         else:
-            if not recaptcha_valid:
-                form.add_error('captcha', 'Error verifying reCAPTCHA, please try again.')
+            print(f"Form validation failed: {form.errors}")
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})
+
 
 def marek(request):
     # mareks = Marek.objects.all()
