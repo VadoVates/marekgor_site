@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Finally recaptcha v3 shall work!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Hiding reCAPTCHA badge">
       <change beforePath="$PROJECT_DIR$/marekgor/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,15 +165,7 @@
       <workItem from="1736195275506" duration="1939000" />
       <workItem from="1736264759357" duration="607000" />
       <workItem from="1736357071237" duration="922000" />
-      <workItem from="1736600477775" duration="336000" />
-    </task>
-    <task id="LOCAL-00006" summary="Updated css">
-      <option name="closed" value="true" />
-      <created>1736026090440</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1736026090440</updated>
+      <workItem from="1736600477775" duration="717000" />
     </task>
     <task id="LOCAL-00007" summary="Fixed site view">
       <option name="closed" value="true" />
@@ -559,7 +551,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736196595622</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Hiding reCAPTCHA badge">
+      <option name="closed" value="true" />
+      <created>1736600945981</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1736600945981</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="background attachement is fixed to body" />
     <MESSAGE value="Changed few settings" />
     <MESSAGE value="Added staticfiles_dirs" />
     <MESSAGE value="Added some middleware to avoid scanning for vulnerabilities" />
@@ -614,7 +613,8 @@
     <MESSAGE value="Trying captcha v3 forms.py + contact.html script + views.py&#10;corrected requirements" />
     <MESSAGE value="Trying captcha v3 forms.py + contact.html script + views.py" />
     <MESSAGE value="Finally recaptcha v3 shall work!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally recaptcha v3 shall work!" />
+    <MESSAGE value="Hiding reCAPTCHA badge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hiding reCAPTCHA badge" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

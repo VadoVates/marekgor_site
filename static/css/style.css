@@ -118,3 +118,8 @@ h1 {
 .grecaptcha-badge {
     visibility: hidden !important;
 }
+
+small {
+    color: #707070;
+    font-size: x-small;
+}
