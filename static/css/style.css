@@ -114,3 +114,7 @@ h1 {
     color: #003500; /* Zielony nagłówek */
     text-align: center;
 }
+
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
