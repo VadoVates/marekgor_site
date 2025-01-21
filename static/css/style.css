@@ -10,9 +10,8 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to bottom, #e9e9e9, #e9e9fa); /* Zachowanie kolorystyki */
     font-family: Arial, sans-serif;
-    background-attachment: fixed;
+    background: linear-gradient(to bottom, #e9e9e9, #e9e9fa) fixed;
     background-size: cover;
 }
 
@@ -62,7 +61,8 @@ nav ul li.active a {
 }
 
 .container {
-    max-width: 500px;
+    width: 100%;
+    max-width: 600px;
     margin: 20px auto; /* Wyśrodkowanie formularza */
     background: linear-gradient(to bottom, #ffffff, #e9e9f5); /* Subtelne tło zgodne z body */
     padding: 20px;
@@ -81,7 +81,7 @@ form label {
 form input, form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border: 1px solid #003500; /* Zielona ramka */
     border-radius: 5px;
     font-size: 1rem;
@@ -96,6 +96,7 @@ form input:focus, form textarea:focus {
 
 
 form button {
+    width: 100%;
     background: linear-gradient(to bottom, #004d00, #003500); /* Gradient zielony */
     color: white;
     border: none;
@@ -112,6 +113,7 @@ form button {
 
 form button:hover {
     background: linear-gradient(to bottom, #005f00, #004000); /* Jaśniejszy gradient na hover */
+    box-shadow: 0 0 10px rgba(0, 80, 0, 0.5);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -132,4 +134,20 @@ small {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Zmniejsz szerokość na mniejszych ekranach */
+        padding: 15px; /* Zmniejsz padding */
+    }
+
+    form button {
+        font-size: 1rem; /* Mniejszy tekst przycisku */
+        padding: 10px; /* Mniejsze odstępy */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem; /* Dopasowanie rozmiaru nagłówków */
+    }
 }
