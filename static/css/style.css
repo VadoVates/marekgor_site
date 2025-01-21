@@ -3,10 +3,10 @@
 }
 
 html, body {
-    height: 100%; /* Ustaw pełną wysokość strony */
-    margin: 0; /* Usuń domyślne marginesy */
+    height: 100%;
+    margin: 0;
     display: flex;
-    flex-direction: column; /* Układ kolumnowy */
+    flex-direction: column;
 }
 
 body {
@@ -17,26 +17,22 @@ body {
 
 header {
     background: linear-gradient(to top, #003500, #002000);
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
 header nav ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
-    gap: 10px;
-}
-
-header nav ul li {
-    display: inline;
+    gap: 20px;
 }
 
 header nav ul li a {
-    color: white;
+    color: #c4f0c4; /* Kolor zegara */
     text-decoration: none;
 }
 
@@ -57,78 +53,47 @@ footer {
     padding: 10px;
 }
 
-header, footer {
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
 main {
     padding: 20px;
-    flex: 1; /* Zajmuje dostępne miejsce między headerem a footerem */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-nav ul li.active a {
-    font-weight: bold;
+    flex: 1;
 }
 
 .container {
-    width: 100%;
     max-width: 600px;
-    margin: 20px auto; /* Wyśrodkowanie formularza */
-    background: linear-gradient(to bottom, #ffffff, #e9e9f5); /* Subtelne tło zgodne z body */
+    margin: 20px auto;
+    background: linear-gradient(to bottom, #ffffff, #e9e9f5);
     padding: 20px;
-    border-radius: 10px; /* Zaokrąglone rogi */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Delikatny cień */
-    border: 1px solid #ccc; /* Lekka ramka */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
 }
 
 form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #003500; /* Zielony tekst, zgodny z header/footer */
+    color: #003500;
 }
 
 form input, form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #003500; /* Zielona ramka */
+    border: 1px solid #003500;
     border-radius: 5px;
     font-size: 1rem;
-    background: #f9f9f9; /* Jasne tło dla pól */
+    background: #f9f9f9;
 }
 
 form input:focus, form textarea:focus {
     outline: none;
-    border-color: #005000; /* Ciemniejszy zielony po kliknięciu */
-    box-shadow: 0 0 5px rgba(0, 80, 0, 0.5); /* Subtelny efekt świetlny */
+    border-color: #005000;
+    box-shadow: 0 0 5px rgba(0, 80, 0, 0.5);
 }
-
 
 form button {
     width: 100%;
-    background: linear-gradient(to bottom, #004d00, #003500); /* Gradient zielony */
+    background: linear-gradient(to bottom, #004d00, #003500);
     color: white;
     border: none;
     border-radius: 5px;
@@ -136,29 +101,16 @@ form button {
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-top: 10px;
 }
 
 form button:hover {
-    background: linear-gradient(to bottom, #005f00, #004000); /* Jaśniejszy gradient na hover */
+    background: linear-gradient(to bottom, #005f00, #004000);
     box-shadow: 0 0 10px rgba(0, 80, 0, 0.5);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #003500; /* Zielony nagłówek */
+h1, h2, h3 {
+    color: #003500;
     text-align: center;
-}
-
-.grecaptcha-badge {
-    visibility: hidden !important;
-}
-
-small {
-    color: #707070;
-    font-size: x-small;
 }
 
 .section-title {
@@ -169,16 +121,16 @@ small {
 
 @media (max-width: 768px) {
     .container {
-        width: 95%; /* Zmniejsz szerokość na mniejszych ekranach */
-        padding: 15px; /* Zmniejsz padding */
+        width: 95%;
+        padding: 15px;
     }
 
     form button {
-        font-size: 1rem; /* Mniejszy tekst przycisku */
-        padding: 10px; /* Mniejsze odstępy */
+        font-size: 1rem;
+        padding: 10px;
     }
 
     h1, h2, h3 {
-        font-size: 1.5rem; /* Dopasowanie rozmiaru nagłówków */
+        font-size: 1.5rem;
     }
 }
