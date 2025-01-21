@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="reformated index, changed headers style, created robots.txt, sitemap.xml, sitemaps code" />
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="reformated index, changed headers style, created robots.txt, sitemap.xml, sitemaps code">
+      <change beforePath="$PROJECT_DIR$/.idea/DjangoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DjangoProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marekgor/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/middleware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/sitemap.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,15 +173,7 @@
       <workItem from="1736600477775" duration="1856000" />
       <workItem from="1736684961064" duration="1705000" />
       <workItem from="1736783326548" duration="1246000" />
-      <workItem from="1737475813919" duration="3971000" />
-    </task>
-    <task id="LOCAL-00016" summary="background attachement is fixed to body">
-      <option name="closed" value="true" />
-      <created>1736067133272</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1736067133272</updated>
+      <workItem from="1737475813919" duration="5369000" />
     </task>
     <task id="LOCAL-00017" summary="Changed few settings">
       <option name="closed" value="true" />
@@ -562,7 +559,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737479860683</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="reformated index, changed headers style, created robots.txt, sitemap.xml, sitemaps code">
+      <option name="closed" value="true" />
+      <created>1737480036654</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1737480036654</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
