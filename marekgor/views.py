@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.core.mail import send_mail
 from marekgor.forms import ContactForm
 from marekgor.utils import verify_recaptcha
+from webpage import settings
 
 def index(request):
     return render(request, 'index.html')
@@ -29,7 +30,7 @@ def contact(request):
                     subject='Formularz kontaktowy',
                     message=f'Nazwa: {name}\nE-mail: {email}\n\n{message}',
                     from_email=email,
-                    recipient_list=['contact@marekgor.com'],
+                    recipient_list=[settings.RECIPIENT_EMAIL],
                 )
                 return render(request, 'contact_success.html', {'form': form})
             except Exception as e:
