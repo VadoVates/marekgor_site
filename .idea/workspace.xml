@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="changed style for &lt;small&gt; / Google privacy policy">
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="testing captcha">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marekgor/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,23 +169,7 @@
       <workItem from="1736600477775" duration="1856000" />
       <workItem from="1736684961064" duration="1705000" />
       <workItem from="1736783326548" duration="1246000" />
-      <workItem from="1737475813919" duration="685000" />
-    </task>
-    <task id="LOCAL-00009" summary="Prepare for sending into space">
-      <option name="closed" value="true" />
-      <created>1736029447970</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1736029447970</updated>
-    </task>
-    <task id="LOCAL-00010" summary="corrected for Heroku">
-      <option name="closed" value="true" />
-      <created>1736029931229</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1736029931229</updated>
+      <workItem from="1737475813919" duration="1557000" />
     </task>
     <task id="LOCAL-00011" summary="Static files">
       <option name="closed" value="true" />
@@ -561,7 +547,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736601402961</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="testing captcha">
+      <option name="closed" value="true" />
+      <created>1737476724524</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1737476724524</updated>
+    </task>
+    <task id="LOCAL-00059" summary="testing captcha">
+      <option name="closed" value="true" />
+      <created>1737476862768</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1737476862768</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,7 +593,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added some middleware to avoid scanning for vulnerabilities" />
     <MESSAGE value="Blocekd some extra paths" />
     <MESSAGE value="Edited e-mail settings" />
     <MESSAGE value="Debugging prod contact form error" />
@@ -616,7 +617,8 @@
     <MESSAGE value="Hiding reCAPTCHA badge" />
     <MESSAGE value="changed style for &lt;small&gt;" />
     <MESSAGE value="changed style for &lt;small&gt; / Google privacy policy" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed style for &lt;small&gt; / Google privacy policy" />
+    <MESSAGE value="testing captcha" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing captcha" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

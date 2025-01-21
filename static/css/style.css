@@ -104,6 +104,10 @@ form button {
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
 }
 
 form button:hover {
