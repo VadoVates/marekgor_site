@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="changed form button style" />
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="recipient hidden in settings" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,15 +165,7 @@
       <workItem from="1736600477775" duration="1856000" />
       <workItem from="1736684961064" duration="1705000" />
       <workItem from="1736783326548" duration="1246000" />
-      <workItem from="1737475813919" duration="2031000" />
-    </task>
-    <task id="LOCAL-00012" summary="whitenoise added">
-      <option name="closed" value="true" />
-      <created>1736031230547</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1736031230547</updated>
+      <workItem from="1737475813919" duration="2614000" />
     </task>
     <task id="LOCAL-00013" summary="trying to correct infinite loop of redirect">
       <option name="closed" value="true" />
@@ -559,7 +551,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737477710300</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="recipient hidden in settings">
+      <option name="closed" value="true" />
+      <created>1737478491234</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1737478491234</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Edited e-mail settings" />
     <MESSAGE value="Debugging prod contact form error" />
     <MESSAGE value="Debugging smtp" />
     <MESSAGE value="Propably fixed sending e-mails from contact form" />
@@ -614,7 +613,8 @@
     <MESSAGE value="changed style for &lt;small&gt; / Google privacy policy" />
     <MESSAGE value="testing captcha" />
     <MESSAGE value="changed form button style" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed form button style" />
+    <MESSAGE value="recipient hidden in settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="recipient hidden in settings" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

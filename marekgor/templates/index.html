@@ -5,33 +5,39 @@
     <h1>Marek Górski</h1>
     <p>A programming enthusiast with a passion for solving problems and creating innovative technological solutions.</p>
 </section>
+<div class="container">
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>I am a Computer Engineering student at the Academy of Humanities and Economics in Łódź, actively contributing to curriculum development as a member of the Program Board.</p>
+        <p>Previously, I earned the title of IT Technician at the Zespół Szkół Politechnicznych in Września. My professional journey includes diverse experiences that have enhanced my adaptability and problem-solving skills.</p>
+    </section>
+</div>
 
-<section class="about-me">
-    <h2>About Me</h2>
-    <p>I am a Computer Engineering student at the Academy of Humanities and Economics in Łódź, actively contributing to curriculum development as a member of the Program Board.</p>
-    <p>Previously, I earned the title of IT Technician at the Zespół Szkół Politechnicznych in Września. My professional journey includes diverse experiences that have enhanced my adaptability and problem-solving skills.</p>
-</section>
+<div class="container">
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, C++, C, Java</li>
+            <li>Technologies: Django, Linux (Debian distributions), MySQL (MariaDB), Git, Visual Studio Code, JetBrains IDEs</li>
+            <li>Soft Skills: quick learning, effective communication, teamwork, stress management</li>
+            <li>English Proficiency: B2</li>
+        </ul>
+    </section>
+</div>
+<div class="container">
+    <section class="portfolio-preview">
+        <h2>Projects</h2>
+        <p>I have completed several personal projects using Arduino and ESP32 microcontrollers, focusing on Wi-Fi configuration, data processing, and presenting results in a web application.</p>
+        <p>All my projects are available at GitHub.</p>
+        <a href="{% url 'marek' %}" class="button">See My Projects</a>
+    </section>
+</div>
 
-<section class="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Programming Languages: Python, C++, C, Java</li>
-        <li>Technologies: Django, Linux (Debian distributions), MySQL (MariaDB), Git, Visual Studio Code, JetBrains IDEs</li>
-        <li>Soft Skills: quick learning, effective communication, teamwork, stress management</li>
-        <li>English Proficiency: B2</li>
-    </ul>
-</section>
-
-<section class="portfolio-preview">
-    <h2>Projects</h2>
-    <p>I have completed several personal projects using Arduino and ESP32 microcontrollers, focusing on Wi-Fi configuration, data processing, and presenting results in a web application.</p>
-    <p>All my projects are available at GitHub.</p>
-    <a href="{% url 'marek' %}" class="button">See My Projects</a>
-</section>
-
-<section class="contact-cta">
-    <h2>Contact Me</h2>
-    <p>Have questions or need technical support? Feel free to reach out!</p>
-    <a href="{% url 'contact' %}" class="button">Get in Touch</a>
-</section>
+<div class="container">
+    <section class="contact-cta">
+        <h2>Contact Me</h2>
+        <p>Have questions or need technical support? Feel free to reach out!</p>
+        <a href="{% url 'contact' %}" class="button">Get in Touch</a>
+    </section>
+</div>
 {% endblock %}
