@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="reformated index">
-      <change afterPath="$PROJECT_DIR$/static/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marekgor/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marekgor/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="reformated index, changed headers style, created robots.txt, sitemap.xml, sitemaps code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,15 +168,7 @@
       <workItem from="1736600477775" duration="1856000" />
       <workItem from="1736684961064" duration="1705000" />
       <workItem from="1736783326548" duration="1246000" />
-      <workItem from="1737475813919" duration="3645000" />
-    </task>
-    <task id="LOCAL-00015" summary="Testing new static settings.">
-      <option name="closed" value="true" />
-      <created>1736066993177</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1736066993178</updated>
+      <workItem from="1737475813919" duration="3971000" />
     </task>
     <task id="LOCAL-00016" summary="background attachement is fixed to body">
       <option name="closed" value="true" />
@@ -568,7 +554,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737478910172</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="reformated index, changed headers style, created robots.txt, sitemap.xml, sitemaps code">
+      <option name="closed" value="true" />
+      <created>1737479860683</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1737479860683</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +592,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Propably fixed sending e-mails from contact form" />
     <MESSAGE value="Removed admin panel - don't have database anyway" />
     <MESSAGE value="Uncommenting sessions and messages to see what crashed site" />
     <MESSAGE value="marek_list -&gt; marek" />
@@ -623,7 +616,8 @@
     <MESSAGE value="recipient hidden in settings" />
     <MESSAGE value="index gets containers" />
     <MESSAGE value="reformated index" />
-    <option name="LAST_COMMIT_MESSAGE" value="reformated index" />
+    <MESSAGE value="reformated index, changed headers style, created robots.txt, sitemap.xml, sitemaps code" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformated index, changed headers style, created robots.txt, sitemap.xml, sitemaps code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
