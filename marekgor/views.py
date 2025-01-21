@@ -18,7 +18,7 @@ def contact(request):
         print(f"reCAPTCHA result: {recaptcha_result}")
 
         # Walidacja formularza i reCAPTCHA
-        if form.is_valid() and recaptcha_result.get('success') and recaptcha_result.get('score', 0) <= 0.8:
+        if form.is_valid() and recaptcha_result.get('success') and recaptcha_result.get('score', 0) >= 0.8:
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
             message = form.cleaned_data['message']
