@@ -4,7 +4,7 @@ function updateClock() {
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
     const currentTime = `${hours}:${minutes}:${seconds}`;
-    document.getElementById('current-time').textContent = `Current Time: ${currentTime}`;
+    document.getElementById('header-clock').textContent = `Current Time: ${currentTime}`;
 }
 
 // Aktualizuj zegar co sekundę
