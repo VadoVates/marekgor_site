@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="many css changes and style in about.html">
-      <change beforePath="$PROJECT_DIR$/marekgor/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/templates/about.html" afterDir="false" />
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="written about.html">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,15 +173,7 @@
       <workItem from="1736600477775" duration="1856000" />
       <workItem from="1736684961064" duration="1705000" />
       <workItem from="1736783326548" duration="1246000" />
-      <workItem from="1737475813919" duration="6437000" />
-    </task>
-    <task id="LOCAL-00019" summary="Changed few settings">
-      <option name="closed" value="true" />
-      <created>1736090693942</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1736090693942</updated>
+      <workItem from="1737475813919" duration="9879000" />
     </task>
     <task id="LOCAL-00020" summary="Changed few settings">
       <option name="closed" value="true" />
@@ -564,7 +559,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737482141556</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="written about.html">
+      <option name="closed" value="true" />
+      <created>1737482748140</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1737482748140</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +597,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="marek_list -&gt; marek" />
     <MESSAGE value="removed all objects from subpage /marek which used database" />
     <MESSAGE value="Added captcha to form" />
     <MESSAGE value="Added captcha to form - test without changes in HTML and JS, only Python" />
@@ -619,7 +621,8 @@
     <MESSAGE value="reformated index, changed headers style, created robots.txt, sitemap.xml, sitemaps code" />
     <MESSAGE value="deleted blocking robots.txt (because I added it); checking out formatting h1 titles" />
     <MESSAGE value="many css changes and style in about.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="many css changes and style in about.html" />
+    <MESSAGE value="written about.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="written about.html" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

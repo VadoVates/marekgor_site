@@ -1,14 +1,13 @@
-// Base script.js
+function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    const currentTime = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('current-time').textContent = `Current Time: ${currentTime}`;
+}
 
-// Entry point of the application
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Application initialized.');
-
-    // Example function to demonstrate functionality 
-    function greetUser(name) {
-        console.log(`Hello, ${name}!`);
-    }
-
-    // Call the example function
-    greetUser('World');
-});
+// Aktualizuj zegar co sekundę
+setInterval(updateClock, 1000);
+// Ustaw początkową wartość zegara
+updateClock();

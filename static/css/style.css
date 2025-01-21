@@ -17,6 +17,37 @@ body {
 
 header {
     background: linear-gradient(to top, #003500, #002000);
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header #header-clock {
+    font-weight: bold;
+    color: #c4f0c4;
+    font-size: 1.2rem;
 }
 
 footer {
