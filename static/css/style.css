@@ -114,7 +114,7 @@ form button:hover {
     background: linear-gradient(to bottom, #005f00, #004000); /* Jaśniejszy gradient na hover */
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     color: #003500; /* Zielony nagłówek */
     text-align: center;
 }
