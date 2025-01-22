@@ -1,31 +1,50 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}Gallery{% endblock %}
+{% block extra_head %}
+    <style>
+        .gallery-item a[data-caption] a {
+            color: #ffffff; /* Ustawienie koloru czcionki na biały */
+            background-color: #003500; /* Ciemne zielone tło */
+            padding: 5px 10px; /* Dodanie odstępów wewnętrznych */
+            border-radius: 5px; /* Zaokrąglenie rogów */
+            text-decoration: none; /* Usunięcie podkreślenia */
+            font-size: 0.9rem; /* Dostosowanie rozmiaru czcionki */
+            display: inline-block; /* Ustawienie jako element blokowy wewnętrzny */
+            margin-top: 10px; /* Odstęp od górnej części opisu */
+        }
+
+        .gallery-item a[data-caption] a:hover {
+            background-color: #004d00; /* Zmiana koloru tła przy najechaniu */
+            color: #c4f0c4; /* Subtelny jasny zielony tekst */
+        }
+    </style>
+{% endblock %}
 {% block content %}
-<div class="container">
-    <h1>Gallery</h1>
-    <div class="gallery-grid">
-        {% for image in images %}
-        <div class="gallery-item">
-            <a href="{% static image.original %}" data-fancybox="gallery" data-caption="
+    <div class="container">
+        <h1>Gallery</h1>
+        <div class="gallery-grid">
+            {% for image in images %}
+                <div class="gallery-item">
+                    <a href="{% static image.original %}" data-fancybox="gallery" data-caption="
                 {% if image.latitude and image.longitude %}
                     <a href='https://www.openstreetmap.org/?mlat={{ image.latitude }}&mlon={{ image.longitude }}' target='_blank'>
-                        View on Map
+                        View on the Map
                     </a>
                 {% else %}
                     No location data available
                 {% endif %}
                 ">
-                <img src="{% static image.thumbnail %}" alt="Thumbnail">
-            </a>
+                        <img src="{% static image.thumbnail %}" alt="Thumbnail">
+                    </a>
+                </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
-</div>
 {% endblock %}
 {% block extra_scripts %}
-<!-- Fancybox CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
-<!-- Fancybox JS -->
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 {% endblock %}
