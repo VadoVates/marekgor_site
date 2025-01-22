@@ -1,3 +1,6 @@
+import os
+from PIL import Image
+from PIL.ExifTags import TAGS, GPSTAGS
 from django.shortcuts import render
 from django.core.mail import send_mail
 from marekgor.forms import ContactForm
@@ -55,5 +58,71 @@ def contact(request):
 def calc(request):
     return render(request, 'calc.html')
 
+# Constants
+GALLERY_DIR = os.path.join(settings.BASE_DIR, 'static', 'img', 'gallery')
+THUMBNAIL_DIR = os.path.join(settings.BASE_DIR, 'static', 'img', 'thumbnails')
+
+def get_exif_data(filepath):
+    try:
+        image = Image.open(filepath)
+        exif_data = image._getexif()
+        if not exif_data:
+            return None
+        gps_data = {}
+        for tag, value in exif_data.items():
+            decoded = TAGS.get(tag, tag)
+            if decoded == "GPSInfo":
+                for t in value:
+                    sub_decoded = GPSTAGS.get(t, t)
+                    gps_data[sub_decoded] = value[t]
+        return gps_data
+    except Exception:
+        return None
+
+def gps_to_decimal(coord, ref):
+    degrees, minutes, seconds = coord
+    decimal = degrees + (minutes / 60.0) + (seconds / 3600.0)
+    if ref in ['S', 'W']:
+        decimal = -decimal
+    return decimal
+
+def extract_gps(gps_data):
+    try:
+        lat = gps_data.get('GPSLatitude')
+        lat_ref = gps_data.get('GPSLatitudeRef')
+        lon = gps_data.get('GPSLongitude')
+        lon_ref = gps_data.get('GPSLongitudeRef')
+        if lat and lat_ref and lon and lon_ref:
+            lat_decimal = gps_to_decimal(lat, lat_ref)
+            lon_decimal = gps_to_decimal(lon, lon_ref)
+            return lat_decimal, lon_decimal
+    except Exception:
+        pass
+    return None, None
+
+def process_image(filename):
+    """
+    Processes a single image file: extracts GPS data and prepares image metadata.
+    """
+    image_path = os.path.join(GALLERY_DIR, filename)
+    gps_data = get_exif_data(image_path)
+    latitude, longitude = extract_gps(gps_data) if gps_data else (None, None)
+    return {
+        'original': f'img/gallery/{filename}',
+        'thumbnail': f'img/thumbnails/{filename}',
+        'latitude': latitude,
+        'longitude': longitude,
+    }
+
+
 def gallery(request):
-    return render(request, 'gallery.html')
+    """
+    View to handle gallery page creation.
+    Iterates over images and processes for rendering metadata.
+    """
+    images = [
+        process_image(filename)
+        for filename in os.listdir(GALLERY_DIR)
+        if filename.endswith('.webp')
+    ]
+    return render(request, 'gallery.html', {'images': images})

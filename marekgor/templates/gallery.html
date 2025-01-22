@@ -1,10 +1,31 @@
 {% extends 'base.html' %}
-{% block title %} Gallery {% endblock %}
+{% load static %}
+{% block title %}Gallery{% endblock %}
 {% block content %}
 <div class="container">
     <h1>Gallery</h1>
-    <div class="gallery">
-
+    <div class="gallery-grid">
+        {% for image in images %}
+        <div class="gallery-item">
+            <a href="{% static image.original %}" data-fancybox="gallery" data-caption="
+                {% if image.latitude and image.longitude %}
+                    <a href='https://www.openstreetmap.org/?mlat={{ image.latitude }}&mlon={{ image.longitude }}' target='_blank'>
+                        View on Map
+                    </a>
+                {% else %}
+                    No location data available
+                {% endif %}
+                ">
+                <img src="{% static image.thumbnail %}" alt="Thumbnail">
+            </a>
+        </div>
+        {% endfor %}
     </div>
 </div>
+{% endblock %}
+{% block extra_scripts %}
+<!-- Fancybox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+<!-- Fancybox JS -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 {% endblock %}

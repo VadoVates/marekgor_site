@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="corrected few Django problems">
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Completed calculator logic, maybe later there's look to fix">
       <change beforePath="$PROJECT_DIR$/.idea/DjangoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DjangoProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/marekgor/templates/calc.html" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/templates/calc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marekgor/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/templates/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marekgor/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marekgor/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marekgor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/calc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpage/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpage/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,11 +91,11 @@
       <recent name="$PROJECT_DIR$/webpage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/marekgor" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/marekgor/templates" />
-      <recent name="$PROJECT_DIR$/marekgor/templates/marekgor" />
     </key>
   </component>
   <component name="RunManager" selected="Python.manage">
@@ -177,15 +181,7 @@
       <workItem from="1736684961064" duration="1705000" />
       <workItem from="1736783326548" duration="1246000" />
       <workItem from="1737475813919" duration="10955000" />
-      <workItem from="1737529286014" duration="7524000" />
-    </task>
-    <task id="LOCAL-00031" summary="Uncommenting sessions and messages to see what crashed site">
-      <option name="closed" value="true" />
-      <created>1736097698573</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1736097698573</updated>
+      <workItem from="1737529286014" duration="13092000" />
     </task>
     <task id="LOCAL-00032" summary="marek_list -&gt; marek">
       <option name="closed" value="true" />
@@ -571,7 +567,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737534959004</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Completed calculator logic, maybe later there's look to fix">
+      <option name="closed" value="true" />
+      <created>1737541957634</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1737541957634</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +605,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="magically started working..." />
     <MESSAGE value="Trying captcha v3, only in forms.py" />
     <MESSAGE value="Trying captcha v3 forms.py + contact.html script" />
     <MESSAGE value="Trying captcha v3 forms.py + contact.html script + views.py&#10;corrected requirements" />
@@ -626,7 +629,8 @@
     <MESSAGE value="Testing clock under header (base.html, script.js, style.css)&#10;corrected script placement (moved under footer)" />
     <MESSAGE value="added formatting for &lt;small&gt;, in style.css&#10;blacked out marek.html subpage&#10;added subpages: calc.html and gallery.html&#10;first try witch calculator on calc.html, added calc.js, written style for calc" />
     <MESSAGE value="corrected few Django problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected few Django problems" />
+    <MESSAGE value="Completed calculator logic, maybe later there's look to fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed calculator logic, maybe later there's look to fix" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

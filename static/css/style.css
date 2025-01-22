@@ -193,6 +193,29 @@ small {
     text-align: center;
 }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px; /* Odstępy między obrazami */
+    padding: 10px;
+}
+
+.gallery-item img {
+    max-width: 150px; /* Maksymalna szerokość obrazka */
+    max-height: 150px; /* Maksymalna wysokość obrazka */
+    width: auto; /* Zachowanie proporcji */
+    height: auto; /* Zachowanie proporcji */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Delikatny cień */
+    transition: transform 0.3s ease;
+    object-fit: contain; /* Obraz będzie w całości widoczny w granicach */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Powiększenie przy najechaniu */
+}
+
+
 @media (max-width: 768px) {
     .container {
         width: 95%;
