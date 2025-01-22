@@ -99,40 +99,43 @@ form input:focus, form textarea:focus {
 #calculator {
     background-color: #002000;
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 320px; /* Zmniejsz maksymalną szerokość */
+    margin: 0 auto; /* Wyśrodkowanie kalkulatora */
     overflow: hidden;
+    padding: 10px; /* Dodaj padding dla lepszej estetyki */
 }
 
 #display {
     width: 100%;
     padding: 10px;
-    font-size: 2rem;
+    font-size: 1.8rem; /* Dopasuj rozmiar tekstu */
     text-align: right;
     background-color: #003500;
     color: white;
     border-bottom: 1px solid #002000;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin-bottom: 10px; /* Dodaj odstęp od klawiszy */
 }
 
 #keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
+    gap: 8px;
+    justify-content: center;
 }
 
 button {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    width: 60px; /* Większe przyciski dla czytelności */
+    height: 60px;
+    border-radius: 50%; /* Pełny okrąg */
     border: none;
     background-color: #707070;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Dopasuj rozmiar tekstu */
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {

@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="corrected few Django problems">
+      <change beforePath="$PROJECT_DIR$/.idea/DjangoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DjangoProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marekgor/templates/calc.html" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/templates/calc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/calc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpage/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpage/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,15 +177,7 @@
       <workItem from="1736684961064" duration="1705000" />
       <workItem from="1736783326548" duration="1246000" />
       <workItem from="1737475813919" duration="10955000" />
-      <workItem from="1737529286014" duration="4684000" />
-    </task>
-    <task id="LOCAL-00030" summary="Removed admin panel - don't have database anyway">
-      <option name="closed" value="true" />
-      <created>1736097407178</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1736097407178</updated>
+      <workItem from="1737529286014" duration="7524000" />
     </task>
     <task id="LOCAL-00031" summary="Uncommenting sessions and messages to see what crashed site">
       <option name="closed" value="true" />
@@ -566,7 +563,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737534645576</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="corrected few Django problems">
+      <option name="closed" value="true" />
+      <created>1737534959004</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1737534959004</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

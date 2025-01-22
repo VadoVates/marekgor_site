@@ -1,17 +1,28 @@
-const display=document.getElementById('display');
+const display = document.getElementById('display');
 
-function appendToDisplay(value){
-    display.innerHTML+=value;
+// Dodaj wartość do wyświetlacza
+function appendToDisplay(value) {
+    display.value += value;
 }
 
-function clearDisplay(){
-    display.innerHTML='';
+// Wyczyść wyświetlacz
+function clearDisplay() {
+    display.value = '';
 }
 
-function calculate(){
+// Usuń ostatni znak
+function backspace() {
+    display.value = display.value.slice(0, -1);
+}
+
+// Wykonaj obliczenia
+function calculate() {
     try {
-        display.innerHTML = eval(display.innerHTML);
+        // Zamień √ na funkcję sqrt() math.js
+        const expression = display.value.replace(/√/g, 'sqrt');
+        const result = math.evaluate(expression);
+        display.value = result;
     } catch (error) {
-        display.innerHTML = 'Error';
+        display.value = 'Error';
     }
 }
