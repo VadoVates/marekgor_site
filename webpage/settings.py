@@ -28,6 +28,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['marekgor.com', 'www.marekgor.com', 'marekgor-8b7239d28435.herokuapp.com']
 
+# DEBUG = True
+# ALLOWED_HOSTS = ['*']
+
 
 # Application definition
 
@@ -154,6 +157,11 @@ SECURE_SSL_REDIRECT = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')  # Obsługa SSL na Heroku
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+
+# debug local options
+# CSRF_COOKIE_SECURE = False
+# SECURE_SSL_REDIRECT = False
+# SESSION_COOKIE_SECURE = False
 
 RECAPTCHA_PUBLIC_KEY = config('RECAPTCHA_PUBLIC_KEY')
 RECAPTCHA_PRIVATE_KEY = config('RECAPTCHA_PRIVATE_KEY')
