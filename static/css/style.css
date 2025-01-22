@@ -215,19 +215,61 @@ small {
     transform: scale(1.05); /* Powiększenie przy najechaniu */
 }
 
+.grecaptcha-badge {
+    visibility: hidden !important;
+    display: none !important;
+}
 
 @media (max-width: 768px) {
+    /* Ogólne dostosowanie kontenera */
     .container {
         width: 95%;
         padding: 15px;
     }
 
+    /* Dostosowanie przycisków formularzy */
     form button {
         font-size: 1rem;
         padding: 10px;
     }
 
-    h1, h2, h3 {
+    /* Nagłówki - zmniejszenie rozmiaru */
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
         font-size: 1.5rem;
     }
+
+    /* Menu - dostosowanie nawigacji */
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header nav ul li {
+        text-align: center;
+    }
+
+    /* Galeria - zmniejszenie wielkości obrazów */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 5px; /* Mniejszy odstęp między obrazami */
+    }
+    .gallery-item img {
+        max-height: 100px;
+    }
+
+    /* Kalkulator - dostosowanie szerokości */
+    #calculator {
+        max-width: 300px; /* Zmniejszenie kalkulatora */
+    }
+
+    /* Dostosowanie czcionek zegara */
+    #live-clock {
+        font-size: 1rem;
+    }
 }
+
