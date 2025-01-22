@@ -7,6 +7,8 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="icon" href="{% static 'img/favicon.ico' %}">
+
+    <script src="{% static 'js/script.js' %}"></script>
     {% block extra_head %}
     {% endblock %}
 </head>
@@ -46,7 +48,6 @@
 </footer>
 
 {% block extra_scripts %}
-    <script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
 </body>
 </html>
