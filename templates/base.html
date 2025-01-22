@@ -23,8 +23,16 @@
             <li class="{% if request.path == '/contact/' %}active{% endif %}">
                 <a href="{% url 'contact' %}">Contact</a>
             </li>
+            <!--  Strona Marek na razie nieaktywna
             <li class="{% if request.path == '/marek/' %}active{% endif %}">
                 <a href="{% url 'marek' %}">My Projects</a>
+            </li>
+            -->
+            <li class="{% if request.path == '/calc/' %}active{% endif %}">
+                <a href="{% url 'calc' %}">Calculator</a>
+            </li>
+            <li class="{% if request.path == '/gallery/' %}active{% endif %}">
+                <a href="{% url 'gallery' %}">Gallery</a>
             </li>
         </ul>
     </nav>

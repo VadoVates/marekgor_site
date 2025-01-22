@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Gallery {% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <img src="{% static 'img/photo1.jpg' %}" alt="Photo 1">
+        <img src="{% static 'img/photo2.jpg' %}" alt="Photo 2">
+        <img src="{% static 'img/photo3.jpg' %}" alt="Photo 3">
+    </div>
+</div>
+{% endblock %}

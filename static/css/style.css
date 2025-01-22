@@ -18,7 +18,7 @@ body {
 header {
     background: linear-gradient(to top, #003500, #002000);
     display: flex;
-    justify-content: center; /* Wyśrodkowanie menu */
+    justify-content: center;
     padding: 10px 20px;
 }
 
@@ -31,7 +31,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #c4f0c4; /* Kolor zegara */
+    color: #c4f0c4;
     text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ header nav ul li a:hover {
 #clock-section {
     text-align: center;
     padding: 5px 0;
-    background-color: #e9e9e9; /* Subtelne tło pod zegarem */
+    background-color: #e9e9e9;
 }
 
 #live-clock {
@@ -96,6 +96,65 @@ form input:focus, form textarea:focus {
     box-shadow: 0 0 5px rgba(0, 80, 0, 0.5);
 }
 
+#calculator {
+    background-color: #002000;
+    border-radius: 10px;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: right;
+    background-color: #003500;
+    color: white;
+    border-bottom: 1px solid #002000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: #707070;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cccccc;
+}
+
+button:active {
+    background-color: #f9f9f9;
+}
+
+.operator-btn {
+    background-color: #aa701a;
+}
+
+.operator-btn:hover {
+    background-color: #de9f1d;
+}
+
+.operator-btn:active {
+    background-color: #ffbd1e;
+}
+
 form button {
     width: 100%;
     background: linear-gradient(to bottom, #004d00, #003500);
@@ -121,6 +180,13 @@ h1, h2, h3 {
 .section-title {
     font-size: 2rem;
     font-weight: bold;
+    text-align: center;
+}
+
+small {
+    color: #707070;
+    font-size: 0.8rem;
+    font-style: italic;
     text-align: center;
 }
 

@@ -49,5 +49,11 @@ def contact(request):
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})
 
-def marek(request):
-    return render(request, 'marek.html')
+#def marek(request):
+#    return render(request, 'marek.html')
+
+def calc(request):
+    return render(request, 'calc.html')
+
+def gallery(request):
+    return render(request, 'gallery.html')

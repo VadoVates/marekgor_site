@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Testing clock under header (base.html, script.js, style.css)&#10;color switcheroo">
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Testing clock under header (base.html, script.js, style.css)&#10;corrected script placement (moved under footer)">
+      <change afterPath="$PROJECT_DIR$/marekgor/templates/calc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/marekgor/templates/gallery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/calc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marekgor/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/marekgor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -55,27 +63,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Django Server.DjangoProject.executor&quot;: &quot;Run&quot;,
-    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/marek/PycharmProjects/DjangoProject/webpage&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.DjangoProject.executor": "Run",
+    "Python.manage.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/marek/PycharmProjects/DjangoProject/webpage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/webpage" />
@@ -171,22 +179,7 @@
       <workItem from="1736684961064" duration="1705000" />
       <workItem from="1736783326548" duration="1246000" />
       <workItem from="1737475813919" duration="10955000" />
-    </task>
-    <task id="LOCAL-00025" summary="Debugging prod contact form error">
-      <option name="closed" value="true" />
-      <created>1736094229122</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1736094229122</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Debugging smtp">
-      <option name="closed" value="true" />
-      <created>1736095104230</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1736095104230</updated>
+      <workItem from="1737529286014" duration="2584000" />
     </task>
     <task id="LOCAL-00027" summary="Debugging smtp">
       <option name="closed" value="true" />
@@ -564,7 +557,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737493421287</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Testing clock under header (base.html, script.js, style.css)&#10;corrected script placement (moved to head)">
+      <option name="closed" value="true" />
+      <created>1737529444114</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1737529444114</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Testing clock under header (base.html, script.js, style.css)&#10;corrected script placement (moved under footer)">
+      <option name="closed" value="true" />
+      <created>1737529593182</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1737529593182</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,8 +603,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added captcha to form - test with changes in HTML and JS" />
-    <MESSAGE value="Recaptcha use ssl=true" />
     <MESSAGE value="Trying to resolve not-working recaptcha v3.0" />
     <MESSAGE value="Trying to resolve not-working recaptcha v2.0" />
     <MESSAGE value="magically started working..." />
@@ -619,7 +626,9 @@
     <MESSAGE value="Testing clock in header (base.html, script.js, style.css)" />
     <MESSAGE value="Testing clock under header (base.html, script.js, style.css)" />
     <MESSAGE value="Testing clock under header (base.html, script.js, style.css)&#10;color switcheroo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing clock under header (base.html, script.js, style.css)&#10;color switcheroo" />
+    <MESSAGE value="Testing clock under header (base.html, script.js, style.css)&#10;corrected script placement (moved to head)" />
+    <MESSAGE value="Testing clock under header (base.html, script.js, style.css)&#10;corrected script placement (moved under footer)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing clock under header (base.html, script.js, style.css)&#10;corrected script placement (moved under footer)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
