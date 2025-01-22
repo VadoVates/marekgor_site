@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="added formatting for &lt;small&gt;, in style.css&#10;blacked out marek.html subpage&#10;added subpages: calc.html and gallery.html&#10;first try witch calculator on calc.html, added calc.js, written style for calc">
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="corrected few Django problems">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/marekgor/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/templates/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpage/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/webpage/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,15 +173,7 @@
       <workItem from="1736684961064" duration="1705000" />
       <workItem from="1736783326548" duration="1246000" />
       <workItem from="1737475813919" duration="10955000" />
-      <workItem from="1737529286014" duration="3360000" />
-    </task>
-    <task id="LOCAL-00028" summary="Propably fixed sending e-mails from contact form">
-      <option name="closed" value="true" />
-      <created>1736095928362</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1736095928362</updated>
+      <workItem from="1737529286014" duration="4366000" />
     </task>
     <task id="LOCAL-00029" summary="Removed admin panel - don't have database anyway">
       <option name="closed" value="true" />
@@ -567,7 +559,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737532082019</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="corrected few Django problems">
+      <option name="closed" value="true" />
+      <created>1737532919280</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1737532919280</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +597,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trying to resolve not-working recaptcha v2.0" />
     <MESSAGE value="magically started working..." />
     <MESSAGE value="Trying captcha v3, only in forms.py" />
     <MESSAGE value="Trying captcha v3 forms.py + contact.html script" />
@@ -622,7 +621,8 @@
     <MESSAGE value="Testing clock under header (base.html, script.js, style.css)&#10;corrected script placement (moved to head)" />
     <MESSAGE value="Testing clock under header (base.html, script.js, style.css)&#10;corrected script placement (moved under footer)" />
     <MESSAGE value="added formatting for &lt;small&gt;, in style.css&#10;blacked out marek.html subpage&#10;added subpages: calc.html and gallery.html&#10;first try witch calculator on calc.html, added calc.js, written style for calc" />
-    <option name="LAST_COMMIT_MESSAGE" value="added formatting for &lt;small&gt;, in style.css&#10;blacked out marek.html subpage&#10;added subpages: calc.html and gallery.html&#10;first try witch calculator on calc.html, added calc.js, written style for calc" />
+    <MESSAGE value="corrected few Django problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected few Django problems" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
