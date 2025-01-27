@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Update reCAPTCHA key in contact form&#10;&#10;Replaced the reCAPTCHA site key in the contact form script to ensure functionality with the correct key. Cleaned up metadata and configuration in the workspace file for improved consistency." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,15 +173,7 @@
       <workItem from="1737529286014" duration="17694000" />
       <workItem from="1737562918027" duration="152000" />
       <workItem from="1738000482943" duration="1068000" />
-      <workItem from="1738008715820" duration="943000" />
-    </task>
-    <task id="LOCAL-00037" summary="Added captcha to form">
-      <option name="closed" value="true" />
-      <created>1736101021717</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1736101021717</updated>
+      <workItem from="1738008715820" duration="1084000" />
     </task>
     <task id="LOCAL-00038" summary="Added captcha to form - test without changes in HTML and JS, only Python">
       <option name="closed" value="true" />
@@ -569,7 +559,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737551173239</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Update reCAPTCHA key in contact form&#10;&#10;Replaced the reCAPTCHA site key in the contact form script to ensure functionality with the correct key. Cleaned up metadata and configuration in the workspace file for improved consistency.">
+      <option name="closed" value="true" />
+      <created>1738009689858</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1738009689858</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,7 +597,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finally recaptcha v3 shall work!" />
     <MESSAGE value="Hiding reCAPTCHA badge" />
     <MESSAGE value="changed style for &lt;small&gt;" />
     <MESSAGE value="changed style for &lt;small&gt; / Google privacy policy" />
@@ -624,7 +621,8 @@
     <MESSAGE value="small edit. changes" />
     <MESSAGE value="Update gallery.html with improved styling and layout fixes&#10;&#10;Refined HTML structure and added CSS styling to enhance the gallery's appearance. Adjusted link hover behavior and updated text for better clarity and user experience. Minor updates were also made to metadata and internal configurations." />
     <MESSAGE value="Hide reCAPTCHA badge and improve gallery styling.&#10;&#10;Added CSS to hide the reCAPTCHA badge for better UI focus. Enhanced gallery styling in both CSS and HTML with refined layout, hover effects, and responsive adjustments for mobile devices to improve user experience. Minor metadata and configuration updates were also made." />
-    <option name="LAST_COMMIT_MESSAGE" value="Hide reCAPTCHA badge and improve gallery styling.&#10;&#10;Added CSS to hide the reCAPTCHA badge for better UI focus. Enhanced gallery styling in both CSS and HTML with refined layout, hover effects, and responsive adjustments for mobile devices to improve user experience. Minor metadata and configuration updates were also made." />
+    <MESSAGE value="Update reCAPTCHA key in contact form&#10;&#10;Replaced the reCAPTCHA site key in the contact form script to ensure functionality with the correct key. Cleaned up metadata and configuration in the workspace file for improved consistency." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update reCAPTCHA key in contact form&#10;&#10;Replaced the reCAPTCHA site key in the contact form script to ensure functionality with the correct key. Cleaned up metadata and configuration in the workspace file for improved consistency." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
