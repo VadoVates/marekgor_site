@@ -33,7 +33,7 @@
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault();  // Zatrzymaj domyślne przesyłanie formularza
 
-        grecaptcha.execute('6LeL-a4qAAAAAHoA8A-XVzrVAardarJSre3eO1o5', { action: 'submit' })
+        grecaptcha.execute('6LfJHMUqAAAAADOqsMh-GFSfHT-rhvJfCRNexP2R', { action: 'submit' })
             .then(function(token) {
                 // Dodaj token do ukrytego pola formularza
                 document.getElementById("id_captcha").value = token;

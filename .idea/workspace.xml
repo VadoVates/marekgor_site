@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="Update gallery.html with improved styling and layout fixes&#10;&#10;Refined HTML structure and added CSS styling to enhance the gallery's appearance. Adjusted link hover behavior and updated text for better clarity and user experience. Minor updates were also made to metadata and internal configurations.">
-      <change beforePath="$PROJECT_DIR$/marekgor/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/marekgor/templates/gallery.html" afterDir="false" />
+    <list default="true" id="ab984bd6-55b7-45df-aeb3-76433877186f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,27 +56,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.DjangoProject.executor": "Run",
-    "Python.manage.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/marek/PycharmProjects/DjangoProject/webpage",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Errors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.DjangoProject.executor&quot;: &quot;Run&quot;,
+    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/marek/PycharmProjects/DjangoProject/webpage&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/webpage" />
@@ -172,15 +172,10 @@
       <workItem from="1736684961064" duration="1705000" />
       <workItem from="1736783326548" duration="1246000" />
       <workItem from="1737475813919" duration="10955000" />
-      <workItem from="1737529286014" duration="15133000" />
-    </task>
-    <task id="LOCAL-00036" summary="removed all objects from subpage /marek which used database">
-      <option name="closed" value="true" />
-      <created>1736099992490</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1736099992490</updated>
+      <workItem from="1737529286014" duration="17694000" />
+      <workItem from="1737562918027" duration="152000" />
+      <workItem from="1738000482943" duration="1068000" />
+      <workItem from="1738008715820" duration="943000" />
     </task>
     <task id="LOCAL-00037" summary="Added captcha to form">
       <option name="closed" value="true" />
@@ -566,7 +561,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737548429350</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Hide reCAPTCHA badge and improve gallery styling.&#10;&#10;Added CSS to hide the reCAPTCHA badge for better UI focus. Enhanced gallery styling in both CSS and HTML with refined layout, hover effects, and responsive adjustments for mobile devices to improve user experience. Minor metadata and configuration updates were also made.">
+      <option name="closed" value="true" />
+      <created>1737551173239</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1737551173239</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,7 +599,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trying captcha v3 forms.py + contact.html script + views.py" />
     <MESSAGE value="Finally recaptcha v3 shall work!" />
     <MESSAGE value="Hiding reCAPTCHA badge" />
     <MESSAGE value="changed style for &lt;small&gt;" />
@@ -621,7 +623,8 @@
     <MESSAGE value="working on gallery.html&#10;added static images (.webp, we'll see if that's any problem) to the gallery&#10;working on creating gallery view in views.py&#10;finished gallery, Python in views.py need simplification, maybe other function than `exif_data = image._getexif()`" />
     <MESSAGE value="small edit. changes" />
     <MESSAGE value="Update gallery.html with improved styling and layout fixes&#10;&#10;Refined HTML structure and added CSS styling to enhance the gallery's appearance. Adjusted link hover behavior and updated text for better clarity and user experience. Minor updates were also made to metadata and internal configurations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update gallery.html with improved styling and layout fixes&#10;&#10;Refined HTML structure and added CSS styling to enhance the gallery's appearance. Adjusted link hover behavior and updated text for better clarity and user experience. Minor updates were also made to metadata and internal configurations." />
+    <MESSAGE value="Hide reCAPTCHA badge and improve gallery styling.&#10;&#10;Added CSS to hide the reCAPTCHA badge for better UI focus. Enhanced gallery styling in both CSS and HTML with refined layout, hover effects, and responsive adjustments for mobile devices to improve user experience. Minor metadata and configuration updates were also made." />
+    <option name="LAST_COMMIT_MESSAGE" value="Hide reCAPTCHA badge and improve gallery styling.&#10;&#10;Added CSS to hide the reCAPTCHA badge for better UI focus. Enhanced gallery styling in both CSS and HTML with refined layout, hover effects, and responsive adjustments for mobile devices to improve user experience. Minor metadata and configuration updates were also made." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1735834789329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
