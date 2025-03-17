@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = False
-ALLOWED_HOSTS = ['marekgor.com', 'www.marekgor.com', 'marekgor-8b7239d28435.herokuapp.com']
+ALLOWED_HOSTS = ['marekgor.com', 'www.marekgor.com', 'localhost', '.marekgor.com']
 
 # TESTING CONFIGURATION:
 
@@ -150,6 +150,7 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')  # lub hardcoded testowo
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')  # lub hardcoded testowo
 RECIPIENT_EMAIL = config('RECIPIENT_EMAIL')
 
+
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
@@ -160,12 +161,13 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')  # Obsługa SSL na
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
+"""
 # LOCAL CONFIGURATION (TESTING ON LOCALHOST)
 #
-# CSRF_COOKIE_SECURE = False
-# SECURE_SSL_REDIRECT = False
-# SESSION_COOKIE_SECURE = False
-
+CSRF_COOKIE_SECURE = False
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = False
+"""
 RECAPTCHA_PUBLIC_KEY = config('RECAPTCHA_PUBLIC_KEY')
 RECAPTCHA_PRIVATE_KEY = config('RECAPTCHA_PRIVATE_KEY')
 RECAPTCHA_USE_SSL = True

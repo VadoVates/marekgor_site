@@ -1,0 +1,21 @@
+services:
+  django:
+    build: .
+    container_name: django_app
+    restart: always
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py collectstatic --noinput &&
+             gunicorn -b 0.0.0.0:8001 webpage.wsgi:application"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    external: true

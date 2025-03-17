@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e9e9e9, #e9e9fa) fixed;
+    background-size: cover;
+}
+
+header {
+    background: linear-gradient(to top, #003500, #002000);
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #c4f0c4;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#clock-section {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #e9e9e9;
+}
+
+#live-clock {
+    font-weight: bold;
+    color: #002800;
+    font-size: 1.2rem;
+}
+
+footer {
+    background: linear-gradient(to bottom, #003500, #002000);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: linear-gradient(to bottom, #ffffff, #e9e9f5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #003500;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #003500;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f9f9f9;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #005000;
+    box-shadow: 0 0 5px rgba(0, 80, 0, 0.5);
+}
+
+#calculator {
+    background-color: #002000;
+    border-radius: 10px;
+    max-width: 320px; /* Zmniejsz maksymalną szerokość */
+    margin: 0 auto; /* Wyśrodkowanie kalkulatora */
+    overflow: hidden;
+    padding: 10px; /* Dodaj padding dla lepszej estetyki */
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.8rem; /* Dopasuj rozmiar tekstu */
+    text-align: right;
+    background-color: #003500;
+    color: white;
+    border-bottom: 1px solid #002000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 10px; /* Dodaj odstęp od klawiszy */
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    justify-content: center;
+}
+
+button {
+    width: 60px; /* Większe przyciski dla czytelności */
+    height: 60px;
+    border-radius: 50%; /* Pełny okrąg */
+    border: none;
+    background-color: #707070;
+    color: white;
+    font-size: 1.2rem; /* Dopasuj rozmiar tekstu */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cccccc;
+}
+
+button:active {
+    background-color: #f9f9f9;
+}
+
+.operator-btn {
+    background-color: #aa701a;
+}
+
+.operator-btn:hover {
+    background-color: #de9f1d;
+}
+
+.operator-btn:active {
+    background-color: #ffbd1e;
+}
+
+form button {
+    width: 100%;
+    background: linear-gradient(to bottom, #004d00, #003500);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: linear-gradient(to bottom, #005f00, #004000);
+    box-shadow: 0 0 10px rgba(0, 80, 0, 0.5);
+}
+
+h1, h2, h3 {
+    color: #003500;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+small {
+    color: #707070;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px; /* Odstępy między obrazami */
+    padding: 10px;
+}
+
+.gallery-item img {
+    max-width: 150px; /* Maksymalna szerokość obrazka */
+    max-height: 150px; /* Maksymalna wysokość obrazka */
+    width: auto; /* Zachowanie proporcji */
+    height: auto; /* Zachowanie proporcji */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Delikatny cień */
+    transition: transform 0.3s ease;
+    object-fit: contain; /* Obraz będzie w całości widoczny w granicach */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Powiększenie przy najechaniu */
+}
+
+.grecaptcha-badge {
+    visibility: hidden !important;
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    /* Ogólne dostosowanie kontenera */
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    /* Dostosowanie przycisków formularzy */
+    form button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Nagłówki - zmniejszenie rozmiaru */
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Menu - dostosowanie nawigacji */
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header nav ul li {
+        text-align: center;
+    }
+
+    /* Galeria - zmniejszenie wielkości obrazów */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 5px; /* Mniejszy odstęp między obrazami */
+    }
+    .gallery-item img {
+        max-height: 100px;
+    }
+
+    /* Kalkulator - dostosowanie szerokości */
+    #calculator {
+        max-width: 300px; /* Zmniejszenie kalkulatora */
+    }
+
+    /* Dostosowanie czcionek zegara */
+    #live-clock {
+        font-size: 1rem;
+    }
+}
+

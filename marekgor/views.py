@@ -123,6 +123,6 @@ def gallery(request):
     images = [
         process_image(filename)
         for filename in os.listdir(GALLERY_DIR)
-        if filename.endswith('.webp')
+        if filename.endswith('.webp') or filename.endswith('.jpg')
     ]
     return render(request, 'gallery.html', {'images': images})
